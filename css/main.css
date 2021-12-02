@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -21497,12 +21498,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 10.625rem);
+}
+
 .top a {
   max-width: 50%;
 }
 
 .top img {
   min-width: 100%;
+}
+
+.nav-item {
+  justify-content: flex-end;
 }
 
 .toggle {
@@ -21525,6 +21538,12 @@ textarea.form-control-lg {
 .btnBlue {
   background-color: #0d253f;
   border-color: #0d253f;
+}
+
+.contactForm {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #0d253f;
 }
 
 .bottomNav {
