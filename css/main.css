@@ -21509,12 +21509,30 @@ textarea.form-control-lg {
   opacity: 0;
 }
 
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.projectCard {
+  max-width: 40rem;
+}
+
+.btnBlue {
+  background-color: #0d253f;
+  border-color: #0d253f;
+}
+
 .bottomNav {
   color: white;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  min-height: 4rem;
+  margin-top: 2rem;
 }
 
 .bottomNav a {

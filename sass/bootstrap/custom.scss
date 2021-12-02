@@ -16,6 +16,25 @@
   opacity: 0;
 }
 
+//-------------- Project Content ---------------
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.projectCard {
+  max-width: 40rem;
+}
+
+.btnBlue {
+  background-color: #0d253f;
+  border-color: #0d253f;
+}
+
 //------------------ Footer ------------------
 
 .bottomNav {
@@ -23,7 +42,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  min-height: 4rem;
+  margin-top: 2rem;
 }
 
 .bottomNav a {
