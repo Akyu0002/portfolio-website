@@ -21497,5 +21497,66 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.top a {
+  max-width: 50%;
+}
+
+.top img {
+  min-width: 100%;
+}
+
+.toggle {
+  opacity: 0;
+}
+
+.bottomNav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  min-height: 4rem;
+}
+
+.bottomNav a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.socials,
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials i {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .toggle {
+    opacity: 1;
+  }
+
+  .experience {
+    padding: 2rem;
+  }
+
+  h3, .h3 {
+    padding: 2rem;
+  }
+
+  .top img {
+    min-width: 25%;
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .experience {
+    padding: 4rem 6rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

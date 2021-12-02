@@ -1,0 +1,83 @@
+//--------------------------------------------
+//----------------- Custom CSS ---------------
+//--------------------------------------------
+
+//------------------ Top Nav -----------------
+.top a {
+  max-width: 50%;
+}
+
+.top img {
+  min-width: 100%;
+}
+
+//------------------ Carousel ------------------
+.toggle {
+  opacity: 0;
+}
+
+//------------------ Footer ------------------
+
+.bottomNav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  min-height: 4rem;
+}
+
+.bottomNav a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.socials,
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials i {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  //------------------ Top Nav ------------------
+
+  //------------------ Carousel ------------------
+  .toggle {
+    opacity: 1;
+  }
+
+  //----------------- Experience -----------------
+  .experience {
+    padding: 2rem;
+  }
+
+  h3 {
+    padding: 2rem;
+  }
+
+  .top img {
+    min-width: 25%;
+    max-width: 50%;
+  }
+
+  //------------------- Footer -------------------
+}
+
+@media only screen and (min-width: 60em) {
+  //------------------ Top Nav ------------------
+
+  //------------------ Carousel ------------------
+
+  //----------------- Experience -----------------
+  .experience {
+    padding: 4rem 6rem;
+  }
+
+  //------------------- Footer -------------------
+}
