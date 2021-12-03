@@ -25,8 +25,14 @@ main {
 }
 
 //------------------ Carousel ------------------
+
 .toggle {
   opacity: 0;
+}
+
+//----------------- Experience -----------------
+.experience {
+  padding: 2rem 4rem;
 }
 
 //-------------- Project Content ---------------
@@ -50,9 +56,19 @@ main {
 
 //------------------ Form --------------------
 .contactForm {
-  margin-top: 2rem;
   padding: 1rem;
   border: 1px solid #0d253f;
+  // width: 40rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  height: 5rem;
 }
 
 //------------------ Footer ------------------
@@ -93,7 +109,7 @@ main {
 
   //----------------- Experience -----------------
   .experience {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
 
   h3 {

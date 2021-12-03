@@ -21522,6 +21522,10 @@ main {
   opacity: 0;
 }
 
+.experience {
+  padding: 2rem 4rem;
+}
+
 .projectContent {
   display: flex;
   flex-direction: column;
@@ -21541,9 +21545,18 @@ main {
 }
 
 .contactForm {
-  margin-top: 2rem;
   padding: 1rem;
   border: 1px solid #0d253f;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  height: 5rem;
 }
 
 .bottomNav {
@@ -21578,7 +21591,7 @@ main {
   }
 
   .experience {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
 
   h3, .h3 {
