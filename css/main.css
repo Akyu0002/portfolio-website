@@ -21559,6 +21559,15 @@ main {
   height: 5rem;
 }
 
+.carousel .carousel-item {
+  min-height: 40rem;
+}
+
+.carousel-item img {
+  min-height: 40rem;
+  object-fit: cover;
+}
+
 .bottomNav {
   color: white;
   display: flex;
@@ -21588,6 +21597,16 @@ main {
 @media only screen and (min-width: 37.5em) {
   .toggle {
     opacity: 1;
+  }
+
+  .carousel .carousel-item {
+    min-height: unset;
+  }
+
+  .carousel-item img {
+    position: unset;
+    min-height: unset;
+    object-fit: unset;
   }
 
   .experience {
