@@ -21526,6 +21526,10 @@ main {
   padding: 2rem 4rem;
 }
 
+.experience-body {
+  min-height: 9rem;
+}
+
 .projectContent {
   display: flex;
   flex-direction: column;
@@ -21565,7 +21569,7 @@ main {
 
 .carousel-item img {
   min-height: 40rem;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .bottomNav {
@@ -21594,19 +21598,14 @@ main {
   padding: 0.5rem;
 }
 
+.socials::hover,
+.social::focus {
+  color: blue;
+}
+
 @media only screen and (min-width: 37.5em) {
   .toggle {
     opacity: 1;
-  }
-
-  .carousel .carousel-item {
-    min-height: unset;
-  }
-
-  .carousel-item img {
-    position: unset;
-    min-height: unset;
-    object-fit: unset;
   }
 
   .experience {
@@ -21623,6 +21622,16 @@ main {
   }
 }
 @media only screen and (min-width: 60em) {
+  .carousel .carousel-item {
+    min-height: unset;
+  }
+
+  .carousel-item img {
+    position: unset;
+    min-height: unset;
+    object-fit: unset;
+  }
+
   .experience {
     padding: 4rem 6rem;
   }
