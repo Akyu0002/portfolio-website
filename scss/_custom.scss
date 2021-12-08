@@ -8,8 +8,13 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-main {
+main,
+.banner {
   min-height: calc(100vh - 10.625rem);
+}
+
+a::hover {
+  color: blue;
 }
 //------------------ Top Nav -----------------
 .top a {
@@ -30,15 +35,26 @@ main {
   opacity: 0;
 }
 
+//------------------ Carousel ------------------
+
+.banner {
+  width: 100%;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url("../images/leone-venter-VieM9BdZKFo-unsplash.jpg");
+}
+
 //----------------- Experience -----------------
 .experience {
   padding: 2rem 4rem;
 }
 
 .experience-body {
-  min-height: 9rem;
+  min-height: 8rem;
 }
-
 //-------------- Project Content ---------------
 .projectContent {
   display: flex;
@@ -56,16 +72,18 @@ main {
 .btnBlue {
   background-color: #0d253f;
   border-color: #0d253f;
+  color: white;
+}
+
+.btnBlue::hover {
+  background-color: #0d253f;
 }
 
 //------------------ Form --------------------
-.contactForm {
-  padding: 1rem;
-  border: 1px solid #0d253f;
-}
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -116,6 +134,10 @@ main {
   color: blue;
 }
 
+a::hover {
+  color: blue;
+}
+
 @media only screen and (min-width: 37.5em) {
   //------------------ Top Nav ------------------
 
@@ -138,16 +160,20 @@ main {
     max-width: 50%;
   }
 
+  .experience-body {
+    min-height: 13rem;
+  }
+
   //------------------- Footer -------------------
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 62em) {
   //------------------ Top Nav ------------------
 
   //------------------ Carousel ------------------
-  .carousel .carousel-item {
-    min-height: unset;
-  }
+  // .carousel .carousel-item {
+  //   min-height: unset;
+  // }
 
   .carousel-item img {
     position: unset;
