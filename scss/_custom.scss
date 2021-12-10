@@ -8,13 +8,12 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-main,
-.banner {
-  min-height: calc(100vh - 10.625rem);
-}
-
 a::hover {
   color: blue;
+}
+
+--color-dark-blue {
+  color: #0d253f;
 }
 //------------------ Top Nav -----------------
 .top a {
@@ -22,29 +21,41 @@ a::hover {
 }
 
 .top img {
-  min-width: 100%;
+  max-width: 75%;
 }
 
-.nav-item {
-  justify-content: flex-end;
+// Override the default Bootstrap values.
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
-//------------------ Carousel ------------------
+//------------------ Banner ------------------
 
-.toggle {
-  opacity: 0;
+.banner {
+  min-height: calc(100vh - 10.625rem);
 }
 
 //------------------ Carousel ------------------
 
 .banner {
-  width: 100%;
-  display: block;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
   background-image: url("../images/leone-venter-VieM9BdZKFo-unsplash.jpg");
+}
+
+.toggle {
+  opacity: 0;
+}
+
+.carousel .carousel-item {
+  min-height: 40rem;
+}
+
+.carousel-item img {
+  min-height: 50rem;
+  object-fit: cover;
 }
 
 //----------------- Experience -----------------
@@ -53,8 +64,17 @@ a::hover {
 }
 
 .experience-body {
-  min-height: 8rem;
+  flex-grow: 1;
 }
+
+.flexSizing {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience-body {
+  flex: 1 1 15rem;
+}
+
 //-------------- Project Content ---------------
 .projectContent {
   display: flex;
@@ -70,13 +90,13 @@ a::hover {
 }
 
 .btnBlue {
-  background-color: #0d253f;
-  border-color: #0d253f;
+  background-color: var(--color-dark-blue);
+  border-color: var(--color-dark-blue);
   color: white;
 }
 
 .btnBlue::hover {
-  background-color: #0d253f;
+  background-color: var(--color-dark-blue);
 }
 
 //------------------ Form --------------------
@@ -92,15 +112,6 @@ a::hover {
   height: 5rem;
 }
 
-.carousel .carousel-item {
-  min-height: 40rem;
-}
-
-.carousel-item img {
-  min-height: 40rem;
-  object-fit: cover;
-}
-
 //------------------ Footer ------------------
 
 .bottomNav {
@@ -108,7 +119,7 @@ a::hover {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  margin-top: 2rem;
+  // margin-top: 2rem;
 }
 
 .bottomNav a {
@@ -129,12 +140,12 @@ a::hover {
   padding: 0.5rem;
 }
 
-.socials::hover,
-.social::focus {
+.socials:hover,
+.social:focus {
   color: blue;
 }
 
-a::hover {
+a:hover {
   color: blue;
 }
 
@@ -160,10 +171,6 @@ a::hover {
     max-width: 50%;
   }
 
-  .experience-body {
-    min-height: 13rem;
-  }
-
   //------------------- Footer -------------------
 }
 
@@ -171,16 +178,6 @@ a::hover {
   //------------------ Top Nav ------------------
 
   //------------------ Carousel ------------------
-  // .carousel .carousel-item {
-  //   min-height: unset;
-  // }
-
-  .carousel-item img {
-    position: unset;
-
-    min-height: unset;
-    object-fit: unset;
-  }
 
   //----------------- Experience -----------------
   .experience {
