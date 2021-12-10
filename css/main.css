@@ -32,7 +32,7 @@ a::hover {
 }
 
 .banner {
-  min-height: calc(100vh - 10.625rem);
+  min-height: calc(100vh - 9rem);
 }
 
 .banner {
@@ -55,12 +55,12 @@ a::hover {
   object-fit: cover;
 }
 
-.experience {
-  padding: 2rem 4rem;
+.carousel {
+  background-color: black;
 }
 
-.experience-body {
-  flex-grow: 1;
+.experience {
+  padding: 2rem 4rem;
 }
 
 .flexSizing {
@@ -70,6 +70,10 @@ a::hover {
 
 .experience-body {
   flex: 1 1 15rem;
+}
+
+.card-title {
+  padding: 1rem 0;
 }
 
 .projectContent {
@@ -151,11 +155,6 @@ a:hover {
 
   h3, .h3 {
     padding: 2rem;
-  }
-
-  .top img {
-    min-width: 25%;
-    max-width: 50%;
   }
 }
 @media only screen and (min-width: 62em) {

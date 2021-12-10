@@ -33,7 +33,7 @@ a::hover {
 //------------------ Banner ------------------
 
 .banner {
-  min-height: calc(100vh - 10.625rem);
+  min-height: calc(100vh - 9rem);
 }
 
 //------------------ Carousel ------------------
@@ -58,13 +58,13 @@ a::hover {
   object-fit: cover;
 }
 
+.carousel {
+  background-color: black;
+}
+
 //----------------- Experience -----------------
 .experience {
   padding: 2rem 4rem;
-}
-
-.experience-body {
-  flex-grow: 1;
 }
 
 .flexSizing {
@@ -75,6 +75,9 @@ a::hover {
   flex: 1 1 15rem;
 }
 
+.card-title {
+  padding: 1rem 0;
+}
 //-------------- Project Content ---------------
 .projectContent {
   display: flex;
@@ -164,11 +167,6 @@ a:hover {
 
   h3 {
     padding: 2rem;
-  }
-
-  .top img {
-    min-width: 25%;
-    max-width: 50%;
   }
 
   //------------------- Footer -------------------
