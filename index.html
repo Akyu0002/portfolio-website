@@ -26,7 +26,7 @@
       <a class="visually-hidden-focusable" href="#tech">Skip to experience.</a>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid top">
-          <a class="navbar-brand" href="index.html"
+          <a class="navbar-brand" href="index.html" aria-label="Click to go to the home page."
             ><img
               src="./images/Logos/Tibet_Logo.svg"
               alt="Tibet's Logo"
@@ -50,7 +50,7 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link active d-flex flex-row gap-2"
+                  class="nav-link active d-flex flex-row gap-2 hover"
                   href="./index.html"
                   aria-label="Go to Home page."
                   aria-current="page"
@@ -59,7 +59,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link d-flex flex-row gap-2"
+                  class="nav-link d-flex flex-row gap-2 hover"
                   href="./portfolio.html"
                   aria-label="Go to Portfolio page."
                 >
@@ -68,7 +68,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link d-flex flex-row gap-2"
+                  class="nav-link d-flex flex-row gap-2 hover"
                   href="./contact.html "
                   aria-label="Go to Contact page."
                 >
@@ -205,22 +205,29 @@
       </section>
     </main>
     <footer class="bg-dark bottomNav">
-      <div class="name hover">
-        <a href="./index.html">Tibet Akyurekli<sup>&copy</sup> </a>
+      <div class="name">
+        <a class="hover" href="./index.html"
+          >Tibet Akyurekli<sup>&copy</sup>
+        </a>
       </div>
       <div class="socials">
-        <a class="hover" href="https://github.com/Akyu0002"
-          ><i class="bi bi-github"></i
+        <a href="https://github.com/Akyu0002"
+        aria-label="Click to go to Tibet's Github"
+          ><i class="bi bi-github hover"></i
         ></a>
-        <a class="hover" href="https://www.linkedin.com/in/tibety/"
-          ><i class="bi bi-linkedin"></i
+        <a href="https://www.linkedin.com/in/tibety/"
+        aria-label="Click to go to Tibet's LinkedIn"
+          ><i class="bi bi-linkedin hover"></i
         ></a>
-        <a class="hover" href="https://mobile.twitter.com/tibet_official"
-          ><i class="bi bi-twitter"></i
+        <a href="https://mobile.twitter.com/tibet_official"
+        aria-label="Click to go to Tibet's Twitter"
+          ><i class="bi bi-twitter hover"></i
         ></a>
-        <a class="hover" href="https://www.instagram.com/tibetyasar/"
-          ><i class="bi bi-instagram"></i
+        <a href="https://www.instagram.com/tibetyasar/"
+        aria-label="Click to go to Tibet's Instagram">  
+          <i class="bi bi-instagram hover"></i
         ></a>
+      </div>
       </div>
     </footer>
 

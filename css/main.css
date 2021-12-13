@@ -94,15 +94,6 @@ html {
   flex: 1 1 15rem;
 }
 
-.projectSizing {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project-body {
-  flex: 1 1 15rem;
-}
-
 .projectBanner {
   background-image: url("../images/nordwood-themes-kRNZiGKtz48-unsplash.jpg");
   background-position: center;
@@ -123,26 +114,9 @@ html {
   grid-row-start: 6;
 }
 
-.projectContent {
-  flex-direction: column;
-  justify-content: space-around;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.projectCard {
-  max-width: 40rem;
-}
-
-.btnBlue {
-  background-color: var(--color-dark-blue);
-  border-color: var(--color-dark-blue);
-  color: white;
-}
-
-.btnBlue::hover {
-  background-color: var(--color-dark-blue);
+.projectH1 {
+  transform: translateX(-100rem);
+  animation: slideIn 0.8s 0.5s forwards;
 }
 
 .banner {
@@ -190,7 +164,7 @@ html {
 
 .hover:hover {
   color: var(--bs-primary) !important;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 37.5em) {

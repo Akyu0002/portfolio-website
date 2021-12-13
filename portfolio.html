@@ -83,80 +83,87 @@
       <section class="projectBanner">
         <h1 class="projectH1">Projects</h1>
       </section>
-      <section class="projectContent">
-        <div class="row justify-content-around">
-          <div class="projectSizing col-12 col-sm-12 col-md-3">
-            <div class="card">
-              <img
-                src="./images/Project Preview/TMDB.png"
-                class="card-img-top"
-                alt="The MovieDB Logo"
-              />
-              <div class="card-body project-body">
-                <h5 class="card-title">ActorSearch SPA</h5>
-                <p class="card-text">
-                  In this project I built a single page application using
-                  JavaScript to fetch data from The MovieDB API, then building
-                  cards to display the actors that was searched for.
-                </p>
-                <p>I then used Bootstrap to style the page.</p>
-                <a
+      <section class="container flex-md-column gap-2 mb-5 mt-5" id="featuredWork" tabindex="0" 
+        <div>
+          <div class="row justify-content-around">
+            <div class="col-12">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 flexSizing">
+              <div class="card mb-3 shadow">
+                <img
+                  src="./images/Project Preview/TMDB.png"
+                  class="card-img-top"
+                  alt="HTML Logo"
+                />
+                <div class="card-body flex-body">
+                  <h2 class="card-title pt-1">ActorSearch SPA</h2>
+                  <p class="card-text">
+                    In this project I built a single page application using
+                    JavaScript to fetch data from The MovieDB API, then building
+                    cards to display the actors that was searched for.
+                  </p>
+                  <p>I then used Bootstrap to style the page.</p>
+                  <a
                   href="https://akyu0002.github.io/simple-spa/#"
                   class="btn btn-primary"
+                  aria-label="Click to go to Actor Search Single Page Application">  
                   >Live Website</a
                 >
-                <a href="https://www.themoviedb.org/" class="btn btn-primary"
-                  >The MovieDB</a
-                >
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="projectSizing col-12 col-sm-12 col-md-3">
-            <div class="card">
-              <img
-                src="./images/Project Preview/App Brand.png"
-                class="card-img-top"
-                alt="EVCon. Preview"
-              />
-              <div class="card-body project-body">
-                <h5 class="card-title">EVCon. App Branding</h5>
-                <p class="card-text">
-                  For this app branding project I started off creating an app
-                  icon in Adobe Illustrator, making the splash screen in Adobe
-                  Photoshop, creating an animated loader with CSS then creating
-                  a prototype using Adobe Xd.
-                </p>
-                <a
-                  href="https://xd.adobe.com/view/c3434aa2-67e6-4bb6-aaef-8186c233256d-9610/"
-                  class="btn btn-primary btnBlue"
-                  >Xd Prototype</a
-                >
-                <a href="https://em6ti.csb.app/" class="btn btn-primary btnBlue"
-                  >SVG Loader</a
-                >
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 flexSizing">
+              <div class="card mb-3 shadow">
+                <img
+                  src="./images/Project Preview/App Brand.png"
+                  class="card-img-topxw"
+                  alt="CSS"
+                />
+                <div class="card-body flex-body">
+                  <h2 class="card-title pt-1">EVCon App Branding</h2>
+                  <p class="card-text">
+                    For this app branding project I started off creating an app
+                    icon in Adobe Illustrator, making the splash screen in Adobe
+                    Photoshop, creating an animated loader with CSS then creating
+                    a prototype using Adobe Xd.
+                  </p>
+                  <a
+                    href="https://xd.adobe.com/view/c3434aa2-67e6-4bb6-aaef-8186c233256d-9610/"
+                    class="btn btn-primary"
+                    aria-label="Click to go to Adobe Xd Prototype">  
+                    >Xd Prototype</a
+                  >
+                  <a href="https://em6ti.csb.app/" class="btn btn-primary"
+                  aria-label="Click to see SVG Animated Loader">  
+                    >SVG Loader</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="projectSizing col-12 col-sm-12 col-md-3">
-            <div class="card">
-              <img
-                src="./images/Project Preview/Polished+.png"
-                class="card-img-top"
-                alt="Polished+ on a laptop"
-              />
-              <div class="card-body project-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 flexSizing">
+              <div class="card mb-3 shadow">
+                <img
+                  src="./images/Project Preview/Polished+.png"
+                  class="card-img-top"
+                  alt="JS"
+                />
+                <div class="card-body flex-body">
+                  <h2 class="card-title pt-1">Polished+</h2>
+                  <p class="card-text">
+                    In this project I built a single page application using
+                    JavaScript to fetch data from The MovieDB API, then building
+                    cards to display the actors that was searched for.
+                  </p>
+                  <p>I then used Bootstrap to style the page.</p>
+                  <a href="https://akyu0002.github.io/mad9013-exercise-website/"
+                  class="btn btn-primary"
+                  aria-label="Click to go to the live Polished+ Website">  
+                  >Live Website</a>
+                
+                  
+                </div>
               </div>
             </div>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="bg-dark bottomNav">
@@ -167,16 +174,20 @@
       </div>
       <div class="socials">
         <a href="https://github.com/Akyu0002"
+        aria-label="Click to go to Tibet's Github"
           ><i class="bi bi-github hover"></i
         ></a>
         <a href="https://www.linkedin.com/in/tibety/"
+        aria-label="Click to go to Tibet's LinkedIn"
           ><i class="bi bi-linkedin hover"></i
         ></a>
         <a href="https://mobile.twitter.com/tibet_official"
+        aria-label="Click to go to Tibet's Twitter"
           ><i class="bi bi-twitter hover"></i
         ></a>
         <a href="https://www.instagram.com/tibetyasar/"
-          ><i class="bi bi-instagram hover"></i
+        aria-label="Click to go to Tibet's Instagram">  
+          <i class="bi bi-instagram hover"></i
         ></a>
       </div>
     </footer>
