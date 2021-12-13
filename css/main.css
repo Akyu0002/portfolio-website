@@ -10,6 +10,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.minHeight {
+  min-height: calc(100vh - 7rem);
+}
+
 --color-dark-blue {
   color: #0d253f;
 }
@@ -17,6 +21,7 @@ html {
 .skip-links a:focus {
   top: 0;
   transition: 0.5s;
+  color: var(--color-dark-blue);
 }
 
 .top a {
@@ -30,10 +35,6 @@ html {
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1rem !important;
   padding-left: 1rem !important;
-}
-
-.minHeight {
-  min-height: calc(100vh - 7rem);
 }
 
 .embedded {
@@ -57,26 +58,26 @@ html {
 
 .bannerContent img {
   width: 100%;
-  max-width: 10rem;
+  max-width: 12rem;
   transform: translateX(-100rem);
-  animation: slideIn 0.5s 1s forwards;
+  animation: slideIn 0.5s 0.5s forwards;
 }
 
 .bannerContent h2, .bannerContent .h2 {
   font-size: 3rem;
   transform: translateX(-100rem);
-  animation: slideIn 0.8s 1s forwards;
+  animation: slideIn 0.8s 0.5s forwards;
 }
 
 .bannerContent p {
   font-size: 1.5rem;
   transform: translateX(-100rem);
-  animation: slideIn 1s 1s forwards;
+  animation: slideIn 1s 0.5s forwards;
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(-60rem);
+    transform: translateX(-100rem);
     opacity: 0;
   }
   to {
@@ -93,8 +94,36 @@ html {
   flex: 1 1 15rem;
 }
 
-.projectContent {
+.projectSizing {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.project-body {
+  flex: 1 1 15rem;
+}
+
+.projectBanner {
+  background-image: url("../images/nordwood-themes-kRNZiGKtz48-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 40rem;
+  max-height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.projectH1 {
+  font-size: 4rem;
+  grid-column-start: 3;
+  grid-column-end: 10;
+  grid-row-start: 6;
+}
+
+.projectContent {
   flex-direction: column;
   justify-content: space-around;
   justify-content: center;
@@ -165,13 +194,12 @@ html {
 }
 
 @media only screen and (min-width: 37.5em) {
-  .bannerContent {
-    grid-column-end: 8;
+  .minHeight {
+    min-height: calc(100vh - 8.5rem);
   }
 
-  .bannerContent img {
-    width: 100%;
-    max-width: 10rem;
+  .bannerContent {
+    grid-column-end: 8;
   }
 
   .bannerContent h2, .bannerContent .h2 {
@@ -181,10 +209,6 @@ html {
   .projectContent {
     display: flex;
     flex-direction: row;
-  }
-
-  .minHeight {
-    min-height: calc(100vh - 8.5rem);
   }
 }
 @media only screen and (min-width: 62em) {

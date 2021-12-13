@@ -8,6 +8,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.minHeight {
+  min-height: calc(100vh - 7rem);
+}
+
 --color-dark-blue {
   color: #0d253f;
 }
@@ -15,6 +19,7 @@ html {
 .skip-links a:focus {
   top: 0;
   transition: 0.5s;
+  color: var(--color-dark-blue);
 }
 //------------------ Top Nav -----------------
 .top a {
@@ -31,17 +36,7 @@ html {
   padding-left: 1rem !important;
 }
 
-//---------------- Form Banner -----------------
-
-.minHeight {
-  min-height: calc(100vh - 7rem);
-}
-
 //---------------- Home Banner -----------------
-
-// .customContainer {
-//   padding: 1rem 5rem 1rem 1rem;
-// }
 
 .embedded {
   background-image: url("../images/roman-bozhko-PypjzKTUqLo-unsplash.jpg");
@@ -51,7 +46,6 @@ html {
   width: 100%;
   min-height: 50rem;
   max-height: 60rem;
-  // padding: 4rem 1rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -65,26 +59,26 @@ html {
 
 .bannerContent img {
   width: 100%;
-  max-width: 10rem;
+  max-width: 12rem;
   transform: translateX(-100rem);
-  animation: slideIn 0.5s 1s forwards;
+  animation: slideIn 0.5s 0.5s forwards;
 }
 
 .bannerContent h2 {
   font-size: 3rem;
   transform: translateX(-100rem);
-  animation: slideIn 0.8s 1s forwards;
+  animation: slideIn 0.8s 0.5s forwards;
 }
 
 .bannerContent p {
   font-size: 1.5rem;
   transform: translateX(-100rem);
-  animation: slideIn 1s 1s forwards;
+  animation: slideIn 1s 0.5s forwards;
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(-60rem);
+    transform: translateX(-100rem);
     opacity: 0;
   }
   to {
@@ -93,8 +87,7 @@ html {
   }
 }
 
-//----------------- Experience -----------------
-
+//----------------- Card Sizing -----------------
 .flexSizing {
   display: flex;
   flex-wrap: wrap;
@@ -102,9 +95,40 @@ html {
 .flex-body {
   flex: 1 1 15rem;
 }
+
+.projectSizing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-body {
+  flex: 1 1 15rem;
+}
+
+//----------------- Experience -----------------
+//---------------- Home Banner -----------------
+.projectBanner {
+  background-image: url("../images/nordwood-themes-kRNZiGKtz48-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 40rem;
+  max-height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.projectH1 {
+  font-size: 4rem;
+  grid-column-start: 3;
+  grid-column-end: 10;
+  grid-row-start: 6;
+}
+
 //-------------- Project Content ---------------
 .projectContent {
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   justify-content: center;
@@ -179,15 +203,15 @@ html {
 }
 
 @media only screen and (min-width: 37.5em) {
+  .minHeight {
+    min-height: calc(100vh - 8.5rem);
+  }
+
   //------------------ Top Nav ------------------
 
   //----------------- Home Banner ----------------
   .bannerContent {
     grid-column-end: 8;
-  }
-  .bannerContent img {
-    width: 100%;
-    max-width: 10rem;
   }
 
   .bannerContent h2 {
@@ -202,9 +226,6 @@ html {
   }
 
   //----------------- Form Banner -----------------
-  .minHeight {
-    min-height: calc(100vh - 8.5rem);
-  }
 
   //------------------- Footer -------------------
 }
