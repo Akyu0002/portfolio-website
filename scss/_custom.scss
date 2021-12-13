@@ -8,12 +8,13 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-a::hover {
-  color: blue;
-}
-
 --color-dark-blue {
   color: #0d253f;
+}
+//-------------- Accessibility ---------------
+.skip-links a:focus {
+  top: 0;
+  transition: 0.5s;
 }
 //------------------ Top Nav -----------------
 .top a {
@@ -30,53 +31,76 @@ a::hover {
   padding-left: 1rem !important;
 }
 
-//------------------ Banner ------------------
+//---------------- Form Banner -----------------
 
-.banner {
-  min-height: calc(100vh - 9rem);
+.minHeight {
+  min-height: calc(100vh - 7rem);
 }
 
-//------------------ Carousel ------------------
+//---------------- Home Banner -----------------
 
-.banner {
+// .customContainer {
+//   padding: 1rem 5rem 1rem 1rem;
+// }
+
+.embedded {
+  background-image: url("../images/roman-bozhko-PypjzKTUqLo-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/leone-venter-VieM9BdZKFo-unsplash.jpg");
-}
-
-.toggle {
-  opacity: 0;
-}
-
-.carousel .carousel-item {
-  min-height: 40rem;
-}
-
-.carousel-item img {
+  width: 100%;
   min-height: 50rem;
-  object-fit: cover;
+  max-height: 60rem;
+  // padding: 4rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
-.carousel {
-  background-color: black;
+.bannerContent {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 2;
+}
+
+.bannerContent img {
+  width: 100%;
+  max-width: 10rem;
+  transform: translateX(-100rem);
+  animation: slideIn 0.5s 1s forwards;
+}
+
+.bannerContent h2 {
+  font-size: 3rem;
+  transform: translateX(-100rem);
+  animation: slideIn 0.8s 1s forwards;
+}
+
+.bannerContent p {
+  font-size: 1.5rem;
+  transform: translateX(-100rem);
+  animation: slideIn 1s 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-60rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 //----------------- Experience -----------------
-.experience {
-  padding: 2rem 4rem;
-}
 
 .flexSizing {
   display: flex;
   flex-wrap: wrap;
 }
-.experience-body {
+.flex-body {
   flex: 1 1 15rem;
-}
-
-.card-title {
-  padding: 1rem 0;
 }
 //-------------- Project Content ---------------
 .projectContent {
@@ -104,6 +128,13 @@ a::hover {
 
 //------------------ Form --------------------
 
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/leone-venter-VieM9BdZKFo-unsplash.jpg");
+}
+
 .center {
   display: flex;
   flex-direction: column;
@@ -122,7 +153,6 @@ a::hover {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  // margin-top: 2rem;
 }
 
 .bottomNav a {
@@ -143,30 +173,37 @@ a::hover {
   padding: 0.5rem;
 }
 
-.socials:hover,
-.social:focus {
-  color: blue;
-}
-
-a:hover {
-  color: blue;
+.hover:hover {
+  color: var(--bs-primary) !important;
+  transition: 1s;
 }
 
 @media only screen and (min-width: 37.5em) {
   //------------------ Top Nav ------------------
 
-  //------------------ Carousel ------------------
-  .toggle {
-    opacity: 1;
+  //----------------- Home Banner ----------------
+  .bannerContent {
+    grid-column-end: 8;
+  }
+  .bannerContent img {
+    width: 100%;
+    max-width: 10rem;
+  }
+
+  .bannerContent h2 {
+    font-size: 5rem;
   }
 
   //----------------- Experience -----------------
-  .experience {
-    padding: 2rem 4rem;
+
+  .projectContent {
+    display: flex;
+    flex-direction: row;
   }
 
-  h3 {
-    padding: 2rem;
+  //----------------- Form Banner -----------------
+  .minHeight {
+    min-height: calc(100vh - 8.5rem);
   }
 
   //------------------- Footer -------------------
@@ -175,12 +212,12 @@ a:hover {
 @media only screen and (min-width: 62em) {
   //------------------ Top Nav ------------------
 
-  //------------------ Carousel ------------------
-
-  //----------------- Experience -----------------
-  .experience {
-    padding: 4rem 6rem;
+  //---------------- Home Banner ----------------
+  .bannerContent {
+    grid-column-end: 8;
   }
 
-  //------------------- Footer -------------------
+  //----------------- Experience ----------------
+
+  //------------------- Footer ------------------
 }
