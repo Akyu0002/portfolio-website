@@ -18,12 +18,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
+    <script src="./js/toTop.js" defer></script>
+    <script src="./js/bootstrap.min.js" defer></script>
 
     <title>Contact | Tibet Akyurekli</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="visually-hidden-focusable" href="#contactForm"
+        >Skip to Contact Form</a
+      >
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark nav" id="nav">
         <div class="container-fluid top">
           <a class="navbar-brand" href="./index.html"
             ><img
@@ -88,14 +93,15 @@
               method="POST"
               class="col-12 col-lg-8 p-3 bg-200 rounded shadow"
               action="#"
+              tabindex="0"
             >
               <div class="row g-3">
-                <h1 class="col-12">Let's Get In Touch!</h1>
+                <h1 class="formH1 col-12">Let's Get In Touch!</h1>
                 <p>
                   If you would like to contact me about any potential work or
                   questions, fill out the form below.
                 </p>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" id="contactForm">
                   <div class="form-floating">
                     <input
                       type="text"
@@ -172,6 +178,7 @@
                       id="email"
                       placeholder="Email"
                       name="email"
+                      required
                     />
                     <label for="email">E-Mail</label>
                   </div>
@@ -199,7 +206,9 @@
                     rows="3"
                     placeholder="Message..."
                   ></textarea>
-                  <label for="message" class="form-label"></label>
+                  <label for="message" class="form-control">
+                    Your message here</label
+                  >
                 </div>
 
                 <div class="col-12 text-start">
@@ -243,7 +252,11 @@
           <i class="bi bi-instagram hover"></i
         ></a>
       </div>
+      <div class="to-top">
+        <a href="#nav" class="arrow" aria-label="Go to the top of the page">
+          <i class="bi bi-arrow-up-circle-fill hover"></i>
+        </a>
+      </div>
     </footer>
-    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
