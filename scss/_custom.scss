@@ -42,7 +42,7 @@ html {
 
 //------------------ Top Nav -----------------
 .top a {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .top img {
@@ -51,6 +51,7 @@ html {
 
 .top {
   padding: 0 2rem !important;
+  flex-wrap: unset !important;
 }
 
 // Override the default Bootstrap values.
@@ -87,16 +88,22 @@ html {
   animation: slideIn 0.6s 0.5s forwards;
 }
 
-.bannerContent h1 {
+.bannerContent h2 {
   font-size: 4rem;
   transform: translateX(-100rem);
   animation: slideIn 0.8s 0.5s forwards;
 }
 
-.bannerContent p {
+.bannerContent .p1 {
   font-size: 1.5rem;
   transform: translateX(-100rem);
   animation: slideIn 1s 0.5s forwards;
+}
+
+.bannerContent .p2 {
+  font-size: 1.5rem;
+  transform: translateX(-100rem);
+  animation: slideIn 1.2s 0.5s forwards;
 }
 
 @keyframes slideIn {
