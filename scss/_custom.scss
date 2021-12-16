@@ -41,17 +41,18 @@ html {
 }
 
 //------------------ Top Nav -----------------
+
+.tibetLogo {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 !important;
+}
+
+.top h1,
 .top a {
-  max-width: 100%;
-}
-
-.top img {
+  margin: 0 !important;
+  padding-right: 1rem;
   max-width: 75%;
-}
-
-.top {
-  padding: 0 2rem !important;
-  flex-wrap: unset !important;
 }
 
 // Override the default Bootstrap values.
@@ -126,6 +127,7 @@ html {
   flex: 1 1 15rem;
 }
 //----------------- Experience -----------------
+
 //--------------- Project Banner ----------------
 .projectBanner {
   background-image: url("../images/nordwood-themes-kRNZiGKtz48-unsplash.jpg");
@@ -220,6 +222,9 @@ html {
   }
 
   //------------------ Top Nav ------------------
+  .top {
+    padding: 0 2rem !important;
+  }
 
   //----------------- Home Banner ----------------
   .embedded {

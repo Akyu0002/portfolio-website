@@ -42,17 +42,17 @@ html {
   transform: none;
 }
 
+.tibetLogo {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 !important;
+}
+
+.top h1, .top .h1,
 .top a {
-  max-width: 100%;
-}
-
-.top img {
+  margin: 0 !important;
+  padding-right: 1rem;
   max-width: 75%;
-}
-
-.top {
-  padding: 0 2rem !important;
-  flex-wrap: unset !important;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -207,6 +207,10 @@ html {
 @media only screen and (min-width: 37.5em) {
   .minHeight {
     min-height: calc(100vh - 8.5rem);
+  }
+
+  .top {
+    padding: 0 2rem !important;
   }
 
   .embedded {
