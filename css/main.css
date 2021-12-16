@@ -49,10 +49,6 @@ html {
   max-width: 15rem;
 }
 
-.tibetLogo {
-  width: 100%;
-}
-
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1rem !important;
   padding-left: 1rem !important;
@@ -204,7 +200,7 @@ html {
 
 @media only screen and (min-width: 37.5em) {
   .minHeight {
-    min-height: calc(100vh - 8.5rem);
+    min-height: calc(100vh - 8rem);
   }
 
   .top {
