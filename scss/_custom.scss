@@ -42,17 +42,15 @@ html {
 
 //------------------ Top Nav -----------------
 
-.tibetLogo {
-  width: 100%;
-  max-width: 70%;
-  margin: 0 !important;
-}
-
-.top h1,
-.top a {
+.tibetLogoParent {
   margin: 0 !important;
   padding-right: 1rem;
-  max-width: 75%;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.tibetLogo {
+  width: 100%;
 }
 
 // Override the default Bootstrap values.
@@ -180,8 +178,8 @@ html {
   align-items: center;
 }
 
-.message {
-  height: 5rem;
+.formMessageLabel {
+  display: none;
 }
 
 //------------------ Footer ------------------
