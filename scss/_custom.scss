@@ -112,13 +112,17 @@ html {
   }
 }
 
-//----------------- Card Sizing -----------------
+  //------------ Card Sizing/Spacing ------------
 .flexSizing {
   display: flex;
   flex-wrap: wrap;
 }
 .flex-body {
   flex: 1 1 15rem;
+}
+
+.cardSpacing {
+  margin: 1rem 0;
 }
 //----------------- Experience -----------------
 
@@ -213,6 +217,11 @@ html {
 @media only screen and (min-width: 37.5em) {
   .minHeight {
     min-height: calc(100vh - 8rem);
+  }
+
+  //------------ Card Sizing/Spacing ------------
+  .cardSpacing {
+    margin: 0.5rem 0;
   }
 
   //------------------ Top Nav ------------------
