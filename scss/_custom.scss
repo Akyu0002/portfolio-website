@@ -209,10 +209,22 @@ html {
   padding: 0.5rem;
 }
 
+.btn-custom {
+  color: #fff !important;
+  background-color: #0d253f !important;
+  border-color: #0d253f !important;
+}
+
+.btn-custom:hover {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
 .hover:hover {
   color: var(--bs-primary) !important;
   transition: 0.5s;
 }
+
 
 @media only screen and (min-width: 37.5em) {
   .minHeight {
