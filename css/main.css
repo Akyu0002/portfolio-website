@@ -75,7 +75,7 @@ html {
 
 .bannerContent img {
   width: 100%;
-  max-width: 12rem;
+  max-width: 9rem;
   transform: translateX(-100rem);
   animation: slideIn 0.6s 0.5s forwards;
 }
@@ -119,6 +119,10 @@ html {
 
 .cardSpacing {
   margin: 1rem 0 !important;
+}
+
+.col-12 > h3, .col-12 > .h3 {
+  font-size: 2rem;
 }
 
 .projectBanner {
@@ -224,6 +228,10 @@ html {
 
   .top {
     padding: 0 2rem !important;
+  }
+
+  .bannerContent img {
+    max-width: 12rem;
   }
 
   .embedded {
