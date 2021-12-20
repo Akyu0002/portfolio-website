@@ -112,7 +112,7 @@ html {
   }
 }
 
-  //------------ Card Sizing/Spacing ------------
+//------------ Card Sizing/Spacing ------------
 .flexSizing {
   display: flex;
   flex-wrap: wrap;
@@ -228,7 +228,6 @@ html {
   transition: 0.5s;
 }
 
-
 @media only screen and (min-width: 37.5em) {
   .minHeight {
     min-height: calc(100vh - 8rem);
@@ -264,7 +263,6 @@ html {
 
   //----------------- Experience -----------------
 
- 
   .projectContent {
     display: flex;
     flex-direction: column;
